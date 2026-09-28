@@ -131,7 +131,9 @@
             <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Send Us a Message</h3>
             <p style="font-size: 0.95rem; margin-bottom: 2rem;">Fill out the form below or reach us directly at powerhousepnw@gmail.com.</p>
 
-            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact.html?submitted=true">
+            <div id="form-status" style="display: none; margin-bottom: 1.5rem; padding: 1.25rem; border-radius: var(--radius-sm);"></div>
+
+            <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
               <!-- Netlify honeypot field for spam prevention -->
               <input type="hidden" name="form-name" value="contact">
               <p style="display: none;">
@@ -166,7 +168,7 @@
                 <textarea id="message" name="message" class="form-textarea" placeholder="Give us a brief overview of the problem, environment (cloud, on-prem), and goals..." required></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+              <button type="submit" id="submit-btn" class="btn btn-primary" style="width: 100%;">Send Message</button>
             </form>
           </div>
 

@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initActiveNavLink();
   initCurrentYear();
   initEmailCopyHandlers();
+  initContactForm();
 });
 
 /**
@@ -148,3 +149,55 @@ function showToast(message) {
 
 // Global exposure for inline onclick handlers if needed
 window.copyEmail = copyEmail;
+
+/**
+ * Handles Netlify contact form submission via AJAX with fallback
+ */
+function initContactForm() {
+  const form = document.getElementById('contact-form');
+  const statusDiv = document.getElementById('form-status');
+  const submitBtn = document.getElementById('submit-btn');
+
+  if (!form || !statusDiv) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+    }
+
+    const formData = new FormData(form);
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then((response) => {
+      if (response.ok) {
+        statusDiv.style.display = 'block';
+        statusDiv.style.backgroundColor = 'rgba(245, 186, 19, 0.12)';
+        statusDiv.style.border = '1px solid var(--accent-gold)';
+        statusDiv.style.color = 'var(--text-primary)';
+        statusDiv.innerHTML = `
+          <strong style="color: var(--accent-gold); font-size: 1.1rem; display: block; margin-bottom: 0.35rem;">✓ Message Successfully Sent!</strong>
+          Thank you for reaching out. We have received your inquiry and will respond within 1 business day.
+        `;
+        form.reset();
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send Another Message';
+        }
+      } else {
+        // Fallback to standard form submission to /success.html
+        form.submit();
+      }
+    })
+    .catch((error) => {
+      console.warn('AJAX submit failed, falling back to standard submit', error);
+      form.submit();
+    });
+  });
+}
+
