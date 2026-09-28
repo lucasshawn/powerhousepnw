@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Powerhouse PNW</title>
+  <meta name="description" content="Explore purpose-built cloud, media processing, and DevOps software products developed by Powerhouse PNW in Bellevue, WA.">
+  <meta property="og:title" content="Products | Powerhouse PNW">
+  <meta property="og:description" content="Cloud & media-based software solutions built with 30+ years of high-scale engineering experience.">
+  <meta property="og:image" content="./public/images/powerhouse-graphic.jpg">
+  <link rel="icon" type="image/svg+xml" href="./public/images/favicon.svg">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/components.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Powerhouse PNW Home">
+        <img src="./public/images/favicon.svg" alt="Powerhouse PNW Emblem" class="brand-icon">
+        <span>POWERHOUSE<span class="brand-text-accent">PNW</span></span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link active">Products</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">Get In Touch</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="products.html" class="mobile-nav-link active">Products</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Get In Touch</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="section-sm" style="border-bottom: 1px solid var(--border-subtle); background: radial-gradient(circle at 50% 0%, rgba(62, 115, 160, 0.15) 0%, transparent 70%);">
+      <div class="container text-center" style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <span class="section-kicker">Software In Development</span>
+        <h1 class="section-title">Products Built for Enterprise Resiliency</h1>
+        <p class="section-subtitle">
+          Purpose-built tools born from three decades of production software and high-scale DevOps engineering. We design tools to solve real infrastructure bottlenecks in cloud, media pipelines, and release delivery.
+        </p>
+      </div>
+    </section>
+
+    <!-- Products Detail Section -->
+    <section class="section">
+      <div class="container">
+        <div style="display: flex; flex-direction: column; gap: 3.5rem;">
+          
+          <!-- Product 1: Cascade StreamCore -->
+          <article id="cascade" class="card card-featured" style="padding: 2.75rem;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
+              <div>
+                <span class="badge badge-blue" style="margin-bottom: 0.75rem;">Cloud & Media Infrastructure</span>
+                <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Cascade StreamCore</h2>
+                <div style="color: var(--accent-gold); font-family: var(--font-heading); font-weight: 600; font-size: 1.05rem;">
+                  Distributed Media Ingest & High-Throughput Transcoding Pipeline
+                </div>
+              </div>
+              <span class="badge badge-gold badge-status">Active Testing & Evaluation</span>
+            </div>
+
+            <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
+              Cascade StreamCore is an ultra-resilient, distributed media pipeline designed to handle variable-rate audio/video ingest, parallelized multi-rendition transcoding, and automated cloud edge delivery. Built from decades of experience shipping media-based software for tier-1 enterprises, it eliminates processing bottlenecks and handles burst loads without dropping frames or bloating cloud compute bills.
+            </p>
+
+            <div class="grid grid-3" style="margin-bottom: 2rem;">
+              <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <div style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.85rem; margin-bottom: 0.35rem;">ARCHITECTURE</div>
+                <div style="color: var(--text-primary); font-weight: 600;">Stateless Worker Fleet</div>
+                <div style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.25rem;">Autonomous transcode pods scale horizontally across on-prem bare metal and cloud fleets.</div>
+              </div>
+
+              <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <div style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.85rem; margin-bottom: 0.35rem;">STREAM FORMATS</div>
+                <div style="color: var(--text-primary); font-weight: 600;">HLS, DASH & CMAF</div>
+                <div style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.25rem;">Sub-second manifest generation with DRM hooks and multi-audio track packaging.</div>
+              </div>
+
+              <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <div style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.85rem; margin-bottom: 0.35rem;">CLOUD HOOKS</div>
+                <div style="color: var(--text-primary); font-weight: 600;">S3, Azure Blob & OCI</div>
+                <div style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.25rem;">Native event-driven storage lifecycle triggers with zero-copy stream caching.</div>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+              <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted);">
+                Target Use: Video streaming platforms, enterprise training libraries, broadcast workflows
+              </div>
+              <a href="contact.html?subject=Cascade+StreamCore" class="btn btn-outline btn-sm">Request Product Evaluation</a>
+            </div>
+          </article>
+
+          <!-- Product 2: StratusRelay -->
+          <article id="stratus" class="card card-featured" style="padding: 2.75rem;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
+              <div>
+                <span class="badge badge-blue" style="margin-bottom: 0.75rem;">DevOps & Infrastructure Automation</span>
+                <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">StratusRelay</h2>
+                <div style="color: var(--accent-gold); font-family: var(--font-heading); font-weight: 600; font-size: 1.05rem;">
+                  Hybrid Cloud Release & DevOps Deployment Orchestrator
+                </div>
+              </div>
+              <span class="badge badge-gold badge-status">Enterprise Pilot Ready</span>
+            </div>
+
+            <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
+              StratusRelay bridges the chasm between legacy on-prem servers and modern multi-cloud Kubernetes clusters. Drawing from 4+ years of intensive DevOps release engineering and 30 years of on-prem systems experience, StratusRelay synchronizes declarative deployment manifests, manages blue/green rollouts across disparate environments, and executes automatic rollback the moment canary metrics degrade.
+            </p>
+
+            <div class="grid grid-3" style="margin-bottom: 2rem;">
+              <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <div style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.85rem; margin-bottom: 0.35rem;">ORCHESTRATION</div>
+                <div style="color: var(--text-primary); font-weight: 600;">Zero-Downtime Blue/Green</div>
+                <div style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.25rem;">Automated traffic shifting with synthetic health checks before routing production users.</div>
+              </div>
+
+              <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <div style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.85rem; margin-bottom: 0.35rem;">HYBRID AGENT</div>
+                <div style="color: var(--text-primary); font-weight: 600;">Secure Outbound Relay</div>
+                <div style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.25rem;">No inbound firewall rules required on-prem; connects securely to cloud control plane.</div>
+              </div>
+
+              <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <div style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.85rem; margin-bottom: 0.35rem;">DECLARATIVE CONFIG</div>
+                <div style="color: var(--text-primary); font-weight: 600;">GitOps & IaC Compatible</div>
+                <div style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.25rem;">Full integration with GitHub Actions, Terraform, Azure DevOps, and Helm.</div>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+              <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted);">
+                Target Use: Teams migrating from data centers to cloud, or operating high-compliance hybrid fleets
+              </div>
+              <a href="contact.html?subject=StratusRelay" class="btn btn-outline btn-sm">Request Product Evaluation</a>
+            </div>
+          </article>
+
+          <!-- Product 3: AlpineTelemetry -->
+          <article id="alpine" class="card card-featured" style="padding: 2.75rem;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
+              <div>
+                <span class="badge badge-blue" style="margin-bottom: 0.75rem;">Reliability & Cloud Diagnostics</span>
+                <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">AlpineTelemetry</h2>
+                <div style="color: var(--accent-gold); font-family: var(--font-heading); font-weight: 600; font-size: 1.05rem;">
+                  Ultra-Lean Observability Daemon & Latency Diagnostics Monitor
+                </div>
+              </div>
+              <span class="badge badge-gold badge-status">In Integration Testing</span>
+            </div>
+
+            <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
+              Most APM tools introduce heavy CPU overhead and steep monthly SaaS bills. AlpineTelemetry is an ultra-lean systems diagnostic daemon built for performance-critical distributed nodes. It captures low-level kernel probes, network socket wait times, and thread scheduling pauses with negligible resource impact, helping engineers identify silent latency spikes before they cause cascading failures.
+            </p>
+
+            <div class="grid grid-3" style="margin-bottom: 2rem;">
+              <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <div style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.85rem; margin-bottom: 0.35rem;">METRIC PROBES</div>
+                <div style="color: var(--text-primary); font-weight: 600;">Zero-Overhead Profiling</div>
+                <div style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.25rem;">Under 0.5% CPU footprint even under maximum transaction concurrency.</div>
+              </div>
+
+              <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <div style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.85rem; margin-bottom: 0.35rem;">ANOMALY DETECTION</div>
+                <div style="color: var(--text-primary); font-weight: 600;">Microsecond Jitter Alerts</div>
+                <div style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.25rem;">Pinpoints socket backlog queues, disk I/O stalls, and garbage collection pauses.</div>
+              </div>
+
+              <div style="background-color: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <div style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.85rem; margin-bottom: 0.35rem;">EXPORT STANDARDS</div>
+                <div style="color: var(--text-primary); font-weight: 600;">OpenTelemetry Native</div>
+                <div style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.25rem;">Direct forwarders to Prometheus, Grafana, AWS CloudWatch, and Datadog.</div>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+              <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted);">
+                Target Use: Low-latency financial systems, real-time media streamers, high-load microservices
+              </div>
+              <a href="contact.html?subject=AlpineTelemetry" class="btn btn-outline btn-sm">Request Product Evaluation</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation Banner -->
+    <section class="section" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-subtle);">
+      <div class="container" style="max-width: 850px; text-align: center;">
+        <span class="section-kicker">Custom Engineering</span>
+        <h2 class="section-title">Need a Custom Software Solution?</h2>
+        <p style="font-size: 1.15rem; margin-bottom: 2rem;">
+          In addition to our internal products, we build custom high-performance software and DevOps infrastructure tailored precisely to your company's specifications.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="services.html" class="btn btn-primary">Review Consulting Services</a>
+          <a href="contact.html" class="btn btn-secondary">Inquire via Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-link">
+            <img src="./public/images/favicon.svg" alt="Powerhouse PNW" class="brand-icon">
+            <span>POWERHOUSE<span class="brand-text-accent">PNW</span></span>
+          </a>
+          <p>
+            Small, efficient software engineering & DevOps consulting team based in Bellevue, Washington. Over 30 years building iterative software on-prem and in the cloud.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Focus Areas</div>
+          <ul class="footer-links">
+            <li><a href="services.html#architecture">Software Architecture</a></li>
+            <li><a href="services.html#devops">Cloud & DevOps</a></li>
+            <li><a href="services.html#media">Media Systems</a></li>
+            <li><a href="products.html">Internal Products</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Connect</div>
+          <div class="footer-contact-info">
+            <div><strong>Location:</strong> Bellevue, WA</div>
+            <div>
+              <strong>Email:</strong><br>
+              <a href="mailto:powerhousepnw@gmail.com" class="footer-contact-link">powerhousepnw@gmail.com</a>
+            </div>
+            <button class="btn btn-copy" data-copy-email style="align-self: flex-start; margin-top: 0.5rem;">Copy Email</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© <span class="current-year">2026</span> Powerhouse PNW. All rights reserved.</div>
+        <div class="footer-pedigree">Bellevue, WA • Microsoft & Oracle Alumni • 30+ Years Experience</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Powerhouse PNW</title>
+  <meta name="description" content="Get in touch with Powerhouse PNW. Contact our Bellevue, WA engineering team directly at powerhousepnw@gmail.com.">
+  <meta property="og:title" content="Contact Us | Powerhouse PNW">
+  <meta property="og:description" content="Reach out to discuss software architecture, cloud & DevOps engineering, or product evaluations.">
+  <meta property="og:image" content="./public/images/powerhouse-graphic.jpg">
+  <link rel="icon" type="image/svg+xml" href="./public/images/favicon.svg">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/components.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Powerhouse PNW Home">
+        <img src="./public/images/favicon.svg" alt="Powerhouse PNW Emblem" class="brand-icon">
+        <span>POWERHOUSE<span class="brand-text-accent">PNW</span></span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">Get In Touch</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+      <li><a href="contact.html" class="mobile-nav-link active">Contact</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Get In Touch</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Header -->
+    <section class="section-sm" style="border-bottom: 1px solid var(--border-subtle); background: radial-gradient(circle at 50% 0%, rgba(245, 186, 19, 0.08) 0%, transparent 70%);">
+      <div class="container" style="text-align: center; max-width: 820px; margin: 0 auto;">
+        <span class="section-kicker">Direct Senior Access</span>
+        <h1 class="section-title">Let's Talk Engineering</h1>
+        <p class="section-subtitle">
+          Bring us the problem. Whether you have a specific system bottleneck, need a cloud migration plan, or want to discuss a product pilot, we're ready to help.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Contact Layout -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2" style="gap: 3.5rem; align-items: flex-start;">
+          
+          <!-- Contact Info & Quick Actions -->
+          <div>
+            <span class="badge badge-gold" style="margin-bottom: 1rem;">GET IN TOUCH</span>
+            <h2 style="font-size: 2rem; margin-bottom: 1.25rem;">Direct & Transparent Communication</h2>
+            <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 2rem;">
+              We don't route your message through intermediaries. You will hear back directly from a senior engineer ready to discuss technical architecture, timelines, and pragmatic approaches.
+            </p>
+
+            <!-- Direct Email Highlight Card -->
+            <div class="card card-featured" style="padding: 2rem; margin-bottom: 2rem;">
+              <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
+                <div class="card-icon" style="margin-bottom: 0;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </div>
+                <div>
+                  <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-gold); text-transform: uppercase;">Direct Inquiries</div>
+                  <div style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary);">powerhousepnw@gmail.com</div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                <a href="mailto:powerhousepnw@gmail.com" class="btn btn-primary btn-sm">Send Email Directly</a>
+                <button class="btn btn-secondary btn-sm" data-copy-email>Copy Email Address</button>
+              </div>
+            </div>
+
+            <!-- Team & Location Details -->
+            <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="color: var(--accent-gold); font-size: 1.2rem; line-height: 1;">📍</div>
+                <div>
+                  <strong style="color: var(--text-primary); display: block;">Headquarters:</strong>
+                  <span style="color: var(--text-secondary); font-size: 0.95rem;">Bellevue, Washington (Greater Seattle Area)</span>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="color: var(--accent-gold); font-size: 1.2rem; line-height: 1;">⏱️</div>
+                <div>
+                  <strong style="color: var(--text-primary); display: block;">Response Time:</strong>
+                  <span style="color: var(--text-secondary); font-size: 0.95rem;">Typically within 1 business day</span>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="color: var(--accent-gold); font-size: 1.2rem; line-height: 1;">💼</div>
+                <div>
+                  <strong style="color: var(--text-primary); display: block;">Engagement Scope:</strong>
+                  <span style="color: var(--text-secondary); font-size: 0.95rem;">Fixed-scope sprints, architecture audits, or embedded consulting</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form (Netlify Form Ready) -->
+          <div class="form-container">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Send Us a Message</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 2rem;">Fill out the form below or reach us directly at powerhousepnw@gmail.com.</p>
+
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact.html?submitted=true">
+              <!-- Netlify honeypot field for spam prevention -->
+              <input type="hidden" name="form-name" value="contact">
+              <p style="display: none;">
+                <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+              </p>
+
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g., Alex Mercer" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Topic / Service Needed</label>
+                <select id="subject" name="subject" class="form-select">
+                  <option value="General Inquiry">General Engineering Inquiry</option>
+                  <option value="Software Architecture">Software Architecture & Consulting</option>
+                  <option value="DevOps & Cloud">Modern DevOps, CI/CD & Cloud Infrastructure</option>
+                  <option value="Media Systems">Media Ingest & Transcoding Pipelines</option>
+                  <option value="Cascade StreamCore">Cascade StreamCore Evaluation</option>
+                  <option value="StratusRelay">StratusRelay Hybrid Release Pilot</option>
+                  <option value="AlpineTelemetry">AlpineTelemetry Integration</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Describe Your Problem or Project</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Give us a brief overview of the problem, environment (cloud, on-prem), and goals..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-link">
+            <img src="./public/images/favicon.svg" alt="Powerhouse PNW" class="brand-icon">
+            <span>POWERHOUSE<span class="brand-text-accent">PNW</span></span>
+          </a>
+          <p>
+            Small, efficient software engineering & DevOps consulting team based in Bellevue, Washington. Over 30 years building iterative software on-prem and in the cloud.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Focus Areas</div>
+          <ul class="footer-links">
+            <li><a href="services.html#architecture">Software Architecture</a></li>
+            <li><a href="services.html#devops">Cloud & DevOps</a></li>
+            <li><a href="services.html#media">Media Systems</a></li>
+            <li><a href="products.html">Internal Products</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Connect</div>
+          <div class="footer-contact-info">
+            <div><strong>Location:</strong> Bellevue, WA</div>
+            <div>
+              <strong>Email:</strong><br>
+              <a href="mailto:powerhousepnw@gmail.com" class="footer-contact-link">powerhousepnw@gmail.com</a>
+            </div>
+            <button class="btn btn-copy" data-copy-email style="align-self: flex-start; margin-top: 0.5rem;">Copy Email</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© <span class="current-year">2026</span> Powerhouse PNW. All rights reserved.</div>
+        <div class="footer-pedigree">Bellevue, WA • Microsoft & Oracle Alumni • 30+ Years Experience</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

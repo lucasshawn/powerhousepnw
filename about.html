@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Powerhouse PNW</title>
+  <meta name="description" content="Learn about Powerhouse PNW: a small, efficient development and DevOps team operating out of Bellevue, WA with over 30 years of engineering pedigree.">
+  <meta property="og:title" content="About Us | Powerhouse PNW">
+  <meta property="og:description" content="Small and efficient development team operating out of Bellevue, WA. Over 30 years of software engineering at Microsoft, Oracle, and beyond.">
+  <meta property="og:image" content="./public/images/powerhouse-graphic.jpg">
+  <link rel="icon" type="image/svg+xml" href="./public/images/favicon.svg">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/components.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Powerhouse PNW Home">
+        <img src="./public/images/favicon.svg" alt="Powerhouse PNW Emblem" class="brand-icon">
+        <span>POWERHOUSE<span class="brand-text-accent">PNW</span></span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link active">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">Get In Touch</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="about.html" class="mobile-nav-link active">About Us</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Get In Touch</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Header -->
+    <section class="section-sm" style="border-bottom: 1px solid var(--border-subtle); background: radial-gradient(circle at 50% 0%, rgba(62, 115, 160, 0.15) 0%, transparent 70%);">
+      <div class="container" style="text-align: center; max-width: 820px; margin: 0 auto;">
+        <span class="section-kicker">Engineering Ethos</span>
+        <h1 class="section-title">Small Team. Deep Engineering. Bellevue, WA.</h1>
+        <p class="section-subtitle">
+          Over three decades of architecting, building, and releasing mission-critical software. No layers of bureaucracy—just veteran engineers solving tough problems.
+        </p>
+      </div>
+    </section>
+
+    <!-- Narrative Section -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2" style="align-items: center; gap: 4rem;">
+          <div>
+            <span class="badge badge-gold" style="margin-bottom: 1rem;">OUR STORY</span>
+            <h2 style="font-size: 2.2rem; margin-bottom: 1.5rem; line-height: 1.25;">
+              Built on 30 Years of Real-World Production Delivery
+            </h2>
+            <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.25rem;">
+              Powerhouse PNW is a small and efficient software development and DevOps team operating out of the tech corridor of Bellevue, Washington.
+            </p>
+            <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.25rem;">
+              Most of our journey has been spent in the trenches writing and releasing software across a 30-year span for massive tech companies—including long tenures delivering core systems for industry titans Microsoft and Oracle. We have seen software lifecycles evolve from bare-metal on-premises servers and bespoke rack infrastructure to distributed multi-cloud architectures.
+            </p>
+            <p style="font-size: 1.05rem; line-height: 1.7;">
+              Over the last 4 years, our focus has expanded intensely into modern DevOps: transforming fragile release cycles into automated, self-healing CI/CD pipelines, container orchestration, and declarative cloud infrastructure.
+            </p>
+          </div>
+
+          <div class="card card-featured" style="padding: 2.5rem;">
+            <div style="font-family: var(--font-mono); color: var(--accent-gold); font-size: 0.9rem; margin-bottom: 1rem; letter-spacing: 0.08em;">
+              // THE POWERHOUSE ADVANTAGE
+            </div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 1.25rem;">
+              <li style="display: flex; gap: 0.75rem;">
+                <span style="color: var(--accent-gold); font-weight: bold;">01</span>
+                <div>
+                  <strong style="color: var(--text-primary); font-size: 1.05rem; display: block;">Senior Engineers Only</strong>
+                  <span style="color: var(--text-secondary); font-size: 0.95rem;">You communicate directly with the individuals writing and deploying your code. No sales account reps or junior handoffs.</span>
+                </div>
+              </li>
+              <li style="display: flex; gap: 0.75rem;">
+                <span style="color: var(--accent-gold); font-weight: bold;">02</span>
+                <div>
+                  <strong style="color: var(--text-primary); font-size: 1.05rem; display: block;">Iterative Delivery</strong>
+                  <span style="color: var(--text-secondary); font-size: 0.95rem;">We release working increments continually. We believe in tight feedback loops, automated testing, and tangible progress.</span>
+                </div>
+              </li>
+              <li style="display: flex; gap: 0.75rem;">
+                <span style="color: var(--accent-gold); font-weight: bold;">03</span>
+                <div>
+                  <strong style="color: var(--text-primary); font-size: 1.05rem; display: block;">On-Prem to Cloud-Native Mastery</strong>
+                  <span style="color: var(--text-secondary); font-size: 0.95rem;">Rare veteran insight spanning legacy architectures, hybrid cloud bridges, and bleeding-edge DevOps automation.</span>
+                </div>
+              </li>
+              <li style="display: flex; gap: 0.75rem;">
+                <span style="color: var(--accent-gold); font-weight: bold;">04</span>
+                <div>
+                  <strong style="color: var(--text-primary); font-size: 1.05rem; display: block;">Reasonable, Honest Pricing</strong>
+                  <span style="color: var(--text-secondary); font-size: 0.95rem;">Our low overhead means enterprise-caliber engineering at rates that make sense for growing teams.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Principles -->
+    <section class="section" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-kicker">Guiding Values</span>
+          <h2 class="section-title">How We Build Software</h2>
+          <p class="section-subtitle">Disciplines refined across millions of lines of code and decades of production releases.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card card-hover">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+            </div>
+            <h3 class="card-title">Craftsmanship Over Hype</h3>
+            <p class="card-desc">We select technologies based on stability, ergonomics, and long-term maintainability—not because a framework is trending this month.</p>
+          </div>
+
+          <div class="card card-hover">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+            </div>
+            <h3 class="card-title">Fail-Safe Resiliency</h3>
+            <p class="card-desc">Software must survive bad networks, server outages, and burst workloads. We design every service with graceful degradation and observability built in.</p>
+          </div>
+
+          <div class="card card-hover">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>
+            </div>
+            <h3 class="card-title">Pragmatic Velocity</h3>
+            <p class="card-desc">Speed comes from clarity and automated testing—not cutting corners. Clean abstractions and automated CI/CD pipelines allow rapid, safe iterations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location / PNW Connection -->
+    <section class="section">
+      <div class="container" style="max-width: 860px; text-align: center;">
+        <span class="section-kicker">Local Roots</span>
+        <h2 class="section-title">Rooted in Bellevue, Washington</h2>
+        <p style="font-size: 1.15rem; margin-bottom: 2rem;">
+          Operating out of the Pacific Northwest tech corridor, Powerhouse PNW blends classic software engineering excellence with the modern speed demanded by contemporary cloud architectures.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-primary btn-lg">Get In Touch With Us</a>
+          <a href="services.html" class="btn btn-secondary btn-lg">Explore Our Services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-link">
+            <img src="./public/images/favicon.svg" alt="Powerhouse PNW" class="brand-icon">
+            <span>POWERHOUSE<span class="brand-text-accent">PNW</span></span>
+          </a>
+          <p>
+            Small, efficient software engineering & DevOps consulting team based in Bellevue, Washington. Over 30 years building iterative software on-prem and in the cloud.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Focus Areas</div>
+          <ul class="footer-links">
+            <li><a href="services.html#architecture">Software Architecture</a></li>
+            <li><a href="services.html#devops">Cloud & DevOps</a></li>
+            <li><a href="services.html#media">Media Systems</a></li>
+            <li><a href="products.html">Internal Products</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Connect</div>
+          <div class="footer-contact-info">
+            <div><strong>Location:</strong> Bellevue, WA</div>
+            <div>
+              <strong>Email:</strong><br>
+              <a href="mailto:powerhousepnw@gmail.com" class="footer-contact-link">powerhousepnw@gmail.com</a>
+            </div>
+            <button class="btn btn-copy" data-copy-email style="align-self: flex-start; margin-top: 0.5rem;">Copy Email</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© <span class="current-year">2026</span> Powerhouse PNW. All rights reserved.</div>
+        <div class="footer-pedigree">Bellevue, WA • Microsoft & Oracle Alumni • 30+ Years Experience</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
