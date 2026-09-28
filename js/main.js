@@ -169,13 +169,13 @@ function initContactForm() {
 
     const formData = new FormData(form);
 
-    fetch('/', {
+    fetch('/contact.html', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(formData).toString()
     })
     .then((response) => {
-      if (response.ok) {
+      if (response.ok || response.status === 200 || response.status === 303 || response.type === 'opaqueredirect') {
         statusDiv.style.display = 'block';
         statusDiv.style.backgroundColor = 'rgba(245, 186, 19, 0.12)';
         statusDiv.style.border = '1px solid var(--accent-gold)';
@@ -190,13 +190,11 @@ function initContactForm() {
           submitBtn.textContent = 'Send Another Message';
         }
       } else {
-        // Fallback to standard form submission to /success.html
-        form.submit();
+        window.location.href = '/success';
       }
     })
-    .catch((error) => {
-      console.warn('AJAX submit failed, falling back to standard submit', error);
-      form.submit();
+    .catch(() => {
+      window.location.href = '/success';
     });
   });
 }

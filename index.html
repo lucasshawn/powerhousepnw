@@ -230,6 +230,15 @@
         </div>
       </div>
     </section>
+
+    <!-- Netlify Form Detection Blueprint (ensures build-time form registration) -->
+    <form name="contact" netlify data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
   </main>
 
   <!-- Site Footer -->
