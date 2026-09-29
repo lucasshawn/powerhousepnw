@@ -66,7 +66,9 @@ check('about.html describes small, efficient team', aboutHtml.includes('small') 
 check('contact.html contains direct email', contactHtml.includes('powerhousepnw@gmail.com'));
 check('contact.html has Netlify form support', contactHtml.includes('data-netlify="true"'));
 
-check('netlify.toml configures clean redirects & security headers', netlifyToml.includes('[[redirects]]') && netlifyToml.includes('[[headers]]'));
+check('success/index.html exists', fs.existsSync(path.join(root, 'success/index.html')));
+check('netlify.toml configures security headers', netlifyToml.includes('[[headers]]'));
+check('_redirects file exists', fs.existsSync(path.join(root, '_redirects')));
 
 console.log('\n======================================================');
 if (failures === 0) {

@@ -2,32 +2,6 @@
   publish = "."
   command = ""
 
-# Clean URL handling (e.g., /about resolves to /about.html)
-[[redirects]]
-  from = "/products"
-  to = "/products.html"
-  status = 200
-
-[[redirects]]
-  from = "/services"
-  to = "/services.html"
-  status = 200
-
-[[redirects]]
-  from = "/about"
-  to = "/about.html"
-  status = 200
-
-[[redirects]]
-  from = "/contact"
-  to = "/contact.html"
-  status = 200
-
-[[redirects]]
-  from = "/success"
-  to = "/success.html"
-  status = 200
-
 # Security and Caching Headers
 [[headers]]
   for = "/*"

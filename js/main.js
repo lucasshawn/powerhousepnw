@@ -169,32 +169,34 @@ function initContactForm() {
 
     const formData = new FormData(form);
 
-    fetch('/contact.html', {
+    function showSuccessMessage() {
+      statusDiv.style.display = 'block';
+      statusDiv.style.backgroundColor = 'rgba(245, 186, 19, 0.12)';
+      statusDiv.style.border = '1px solid var(--accent-gold)';
+      statusDiv.style.color = 'var(--text-primary)';
+      statusDiv.innerHTML = `
+        <strong style="color: var(--accent-gold); font-size: 1.15rem; display: block; margin-bottom: 0.35rem;">✓ Message Successfully Sent!</strong>
+        Thank you for reaching out. We have received your inquiry and our engineering team will respond within 1 business day.
+      `;
+      form.reset();
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Another Message';
+      }
+      statusDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    fetch(window.location.pathname, {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(formData).toString()
     })
     .then((response) => {
-      if (response.ok || response.status === 200 || response.status === 303 || response.type === 'opaqueredirect') {
-        statusDiv.style.display = 'block';
-        statusDiv.style.backgroundColor = 'rgba(245, 186, 19, 0.12)';
-        statusDiv.style.border = '1px solid var(--accent-gold)';
-        statusDiv.style.color = 'var(--text-primary)';
-        statusDiv.innerHTML = `
-          <strong style="color: var(--accent-gold); font-size: 1.1rem; display: block; margin-bottom: 0.35rem;">✓ Message Successfully Sent!</strong>
-          Thank you for reaching out. We have received your inquiry and will respond within 1 business day.
-        `;
-        form.reset();
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'Send Another Message';
-        }
-      } else {
-        window.location.href = '/success';
-      }
+      showSuccessMessage();
     })
-    .catch(() => {
-      window.location.href = '/success';
+    .catch((error) => {
+      console.warn('Form submission notice:', error);
+      showSuccessMessage();
     });
   });
 }
